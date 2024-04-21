@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>yt2ncyt</title>
+		<meta name="description" content="変換器">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
+		<script src="sample.js"></script>
+	</head>
+
+	<body>
+		<!----- ヘッダー ----->
+		<header>Youtube to no-cookie-Youtube</header>
+		<!----- ヘッダー END ----->
+		
+		<!----- メインコンテンツ ----->
+		<article>
+			<h1>yt2ncyt</h1>
+			<section>
+				<h2>Youtubeのリンクを変換します</h2>
+				<p><input type="button" value="ここをクリック" onClick="disp()"></p>
+			</section>
+		</article>
+		<!----- メインコンテンツ END ----->
+		
+<script type="text/javascript">
+function disp(){
+const url = window.prompt('好きなYoutubeのリンクを入れてね');
+if (url) {const search = new URL(url).searchParams;
+const videoId = search.get('v');
+if (videoId) {
+const newUrl = 'https://www.youtube-nocookie.com/embed/' + videoId;
+window.open(newUrl);
+} else {
+const newUrl = url.replace('https://youtu.be/', 'https://www.youtube-nocookie.com/embed/');
+if (newUrl !== url) {
+window.open(newUrl);
+}
+}
+}
+}
+</script>
+	</body>
+</html>

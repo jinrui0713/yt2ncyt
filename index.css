@@ -34,7 +34,7 @@ h1:before {
 /* 背景用*/
 body {
   padding: 30px;
-  background: #1d228d;
+  background: #7d9ffb;
 }
 p {
   /* 水平方向の中央揃え */
@@ -105,7 +105,7 @@ a.btn-border-shadow:hover:before {
 h3 {
   border-bottom: solid 3px #cce4ff;
   position: relative;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 h3:after {
@@ -115,4 +115,8 @@ h3:after {
   border-bottom: solid 3px #5472cd;
   bottom: -3px;
   width: 20%;
+}
+a.text {
+  font-size: 30px;
+  color: #2b00ff;
 }

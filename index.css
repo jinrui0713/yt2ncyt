@@ -21,7 +21,7 @@ h2 {
   font-size: 25px;
 }
 h1 {
-  color: #ffffff;/*文字色*/
+  color: black;/*文字色*/
   padding: 0.5em;/*文字周りの余白*/
   display: inline-block;/*おまじない*/
   line-height: 2;/*行高*/

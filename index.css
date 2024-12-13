@@ -21,7 +21,7 @@ h2 {
   font-size: 25px;
 }
 h1 {
-  color: #505050;/*文字色*/
+  color: #ffffff;/*文字色*/
   padding: 0.5em;/*文字周りの余白*/
   display: inline-block;/*おまじない*/
   line-height: 2;/*行高*/
@@ -39,7 +39,7 @@ h1:before {
 /* 背景用*/
 body {
   padding: 30px;
-  background: #7d9ffb;
+  background: #2a2b2b;
 }
 p {
   /* 水平方向の中央揃え */
